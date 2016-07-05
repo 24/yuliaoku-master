@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="timescolor">#ffff6176</color>
+    <color name="primary">#ff03a9f4</color>
+    <color name="primaryDark">#ee3399f4</color>
+    <color name="accent">#ffffff</color>
+    <color name="item_select">#ffff6089</color>
+    <color name="item_show">#6E6E6E</color>
+    <color name="background_floating_layer">#b000</color>
+    <color name="login_button">#50ffffff</color>
+    <color name="login_button_pressed">#89ffffff</color>
+    <color name="text_color">#666666</color>
+    <color name="tab_color">#DBDBD3</color>
+
+    <color name="primaryTrans">#cc03a9f4</color>
+
+
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+
+
+    <color name="service_list_selected_bg">#ffffffff</color>
+    <color name="user_layout_selected_bg">#ffd4d4d4</color>
+    <color name="card_bg">#ffe4e4e4</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+
+    <!--list颜色-->
+    <color name="system">#ff03a9f4</color>
+    <color name="aqua">#00ffff</color>
+    <color name="blueviolet">#8A2BE2</color>
+    <color name="coral">#DA70D6</color>
+    <color name="darkblue">#00008B</color>
+    <color name="darkcyan">#008B8B</color>
+    <color name="ghostwhite">#F8F8FF</color>
+    <color name="indianred">#CD5C5C</color>
+    <color name="lightcyan">#E0FFFF</color>
+    <color name="lightpink">#FFB6C1</color>
+    <color name="orchid">#DA70D6</color>
+    <color name="slategray">#708090</color>
+    <color name="tan">#D2B48C</color>
+    <color name="violet">#EE82EE</color>
+    <color name="yellow">#FFFF00</color>
+</resources>

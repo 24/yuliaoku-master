@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_below="@+id/title">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#50ffffff"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/new_username"
+                android:hint="用户名"
+                app:hideUnderline="true"
+                app:baseColor="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/new_email"
+                android:hint="邮箱"
+                app:hideUnderline="true"
+                app:baseColor="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:hint="密码"
+                android:id="@+id/new_password"
+                android:password="true"
+                app:hideUnderline="true"
+                app:baseColor="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:hint="重复密码"
+                android:id="@+id/repeat_password"
+                android:password="true"
+                app:hideUnderline="true"
+                app:baseColor="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="#50ffffff"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/submit"
+                android:textColor="@color/text_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_signup"
+                android:background="@drawable/drawable_button_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/return_back"
+                android:id="@+id/return_back"
+                android:layout_margin="10dp"
+                android:textColor="@color/text_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flexible_space_height"
+                android:id="@+id/expanded_toolbar" />
+
+            <include layout="@layout/layout_dictionary_result_item"
+                android:id="@+id/include" />
+            <include layout="@layout/layout_dictionary_result_empty"
+                android:id="@+id/empty" />
+
+        </LinearLayout>
+
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+
+    <!-- Framelayout per la visualizzazione -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusMargin"
+            android:background="?attr/colorPrimary" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:layout_below="@+id/statusBar"
+            app:popupTheme="@style/Theme.AppCompat.Light" />
+
+        <TextView
+
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minHeight="?attr/actionBarSize"
+            android:textColor="@android:color/white"
+            android:textSize="21sp"
+            android:layout_below="@+id/statusBar"
+            android:layout_marginLeft="72dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

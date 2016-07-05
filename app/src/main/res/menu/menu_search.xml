@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="@string/action_approximately"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_words"
+        android:orderInCategory="100"
+        android:title="@string/action_words"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_abbreviation"
+        android:orderInCategory="100"
+        android:title="@string/action_abbreviation"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_build"
+        android:orderInCategory="100"
+        android:title="@string/action_build"
+        app:showAsAction="never" />
+</menu>

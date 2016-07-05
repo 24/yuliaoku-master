@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_card_item_style">
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_more_vert_grey600_24dp" />
+
+        <TextView
+            android:id="@+id/key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/meaning"
+            android:layout_alignStart="@+id/meaning"
+            android:layout_below="@+id/meaning"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/meaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/key"
+            android:layout_alignStart="@+id/key"
+            android:layout_below="@+id/menu"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</LinearLayout>

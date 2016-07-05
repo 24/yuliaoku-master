@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.xya.MainActivity.SignInActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <!-- Framelayout per la visualizzazione -->
+    <RelativeLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusMargin" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_below="@+id/statusBar"
+            app:popupTheme="@style/Theme.AppCompat.Light" />
+
+
+        <RelativeLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="96dp"
+                android:id="@+id/title"
+                android:layout_height="96dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/head"
+                app:border_width="2dp"
+                app:border_color="#ffffffff" />
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/layout_user_signup" />
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/title"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:background="#50ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/username"
+                        android:hint="用户名/邮箱"
+                        app:hideUnderline="true"
+                        app:baseColor="@android:color/background_dark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="20dp" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:hint="密码"
+                        android:id="@+id/password"
+                        android:password="true"
+                        app:hideUnderline="true"
+                        app:baseColor="@android:color/background_dark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#50ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/signin"
+                        android:textColor="@color/text_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signin"
+                        android:background="@drawable/drawable_button_style" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_logton"
+                        android:id="@+id/signup"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_color" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other_signin"
+                android:textColor="@color/text_color"
+                android:id="@+id/more"
+                android:background="@drawable/drawable_button_style"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

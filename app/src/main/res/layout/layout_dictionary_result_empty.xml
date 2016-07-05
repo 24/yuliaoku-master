@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ooops!"
+        android:textSize="72dp"
+        android:textColor="@color/primary"
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  本地无法找到你所需的词..."
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联网试试..."
+        android:textColor="@color/primary"
+        android:id="@+id/connectNetwork"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+</RelativeLayout>

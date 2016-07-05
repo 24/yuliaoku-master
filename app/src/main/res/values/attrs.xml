@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PaperButton Attribute -->
+    <declare-styleable name="PaperButton">
+        <attr name="paper_text" format="string" />
+        <attr name="paper_text_size" format="dimension" />
+        <attr name="paper_text_color" format="color" />
+        <attr name="paper_font" format="string" />
+        <attr name="paper_color" format="color" />
+        <attr name="paper_corner_radius" format="dimension" />
+        <attr name="paper_shadow_radius" format="float" />
+        <attr name="paper_shadow_offset_x" format="float" />
+        <attr name="paper_shadow_offset_y" format="float" />
+        <attr name="paper_shadow_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CloudItem">
+        <attr name="pb_icon" format="reference" />
+        <attr name="pb_text" format="string" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="SwipeLayout">-->
+        <!--<attr name="drag_edge" format="enum">-->
+            <!--<enum name="left" value="0"/>-->
+            <!--<enum name="right" value="1"/>-->
+            <!--<enum name="top" value="2"/>-->
+            <!--<enum name="bottom" value="3"/>-->
+        <!--</attr>-->
+        <!--<attr name="show_mode" format="enum">-->
+            <!--<enum name="lay_down" value="0"/>-->
+            <!--<enum name="pull_out" value="1"/>-->
+        <!--</attr>-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="ZSwipeItem">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="horizontalSwipeOffset" format="dimension" />
+        <attr name="verticalSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

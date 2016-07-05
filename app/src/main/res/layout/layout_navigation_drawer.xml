@@ -1,0 +1,38 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+<!--主显示处-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusMargin"
+            android:background="?attr/colorPrimary" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:layout_below="@+id/statusBar"
+            app:popupTheme="@style/Theme.AppCompat.Light">
+        </android.support.v7.widget.Toolbar>
+        <!--fragment添加到frame_container这个viewGroup-->
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"/>
+
+    </RelativeLayout>
+<!--菜单view-->
+    <include layout="@layout/layout_navigation_draw" />
+
+</android.support.v4.widget.DrawerLayout>

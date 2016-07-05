@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/polysemyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/item_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/polysemy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_expand_more_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="多义词"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/polysemyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="72dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_dns_grey600_24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:editable="false"
+            android:hint="单词"
+            android:text="@string/lipsum"
+            app:baseColor="@color/item_show"
+            app:floatingLabel="normal"
+            app:hideUnderline="true"
+            app:singleLineEllipsis="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_voicemail_grey600_24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/pronunciation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:editable="false"
+            android:hint="发音"
+            android:text="@string/lipsum"
+            app:baseColor="@color/item_show"
+            app:floatingLabel="normal"
+            app:hideUnderline="true"
+            app:singleLineEllipsis="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_translate_grey600_24dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/definition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:editable="false"
+                android:hint="释义"
+                android:text="@string/lipsum"
+                app:baseColor="@color/item_show"
+                app:floatingLabel="normal"
+                app:hideUnderline="true"
+                app:singleLineEllipsis="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout4"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_more_grey600_24dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/addto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/addto"
+                app:baseColor="@color/item_show"
+                app:hideUnderline="true" />
+
+            <LinearLayout
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.xya.UserInterface.MaterialWidget.Widget.PaperButton
+                    android:id="@+id/addToNotice"
+                    android:layout_width="110dp"
+                    android:layout_height="48dp"
+                    widget:paper_text="添加到笔记" />
+
+                <com.xya.UserInterface.MaterialWidget.Widget.PaperButton
+                    android:id="@+id/addToWord"
+                    android:layout_width="130dp"
+                    android:layout_height="48dp"
+                    widget:paper_text="添加到单词本" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout5"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_today_grey600_24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:editable="false"
+            android:hint="今天"
+            app:baseColor="@color/item_show"
+            app:floatingLabel="normal"
+            app:hideUnderline="true"
+            app:singleLineEllipsis="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

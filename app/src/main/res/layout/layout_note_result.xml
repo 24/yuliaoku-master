@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/note">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical|center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusMargin" />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusBar"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.AppCompat.Light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/note"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/mynote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="我的笔记"
+            android:text="string"
+            app:baseColor="@android:color/white"
+            app:floatingLabel="highlight"
+            android:singleLine="true"
+            app:hideUnderline="true"
+            android:layout_margin="32dp"
+
+            />
+    </LinearLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,393 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Framelayout per la visualizzazione -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusMargin"
+            android:background="?attr/colorPrimary" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusBar"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.AppCompat.Light" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/all">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="#ffd4d4d4" />
+
+                <LinearLayout
+                    android:id="@+id/set_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@drawable/user_layout_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_push_icon" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1.0"
+                        android:text="用户管理"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_push_icon" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/set_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_push_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1.0"
+                        android:text="2G/3G联网"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+                    <ToggleButton
+                        android:id="@+id/set_data_toggle"
+                        android:layout_width="55.0dip"
+                        android:layout_height="35.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="true"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="#ffdcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/set_theme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/user_layout_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_qingchuhuancun_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1"
+                        android:text="更换主题"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="#ffdcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/set_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/user_layout_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_qingchuhuancun_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1"
+                        android:text="字体大小"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="#ffdcdcdc" />
+
+
+                <LinearLayout
+                    android:id="@+id/set_share"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/user_layout_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_qingchuhuancun_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1"
+                        android:text="分享给朋友"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/set_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@drawable/user_layout_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_guanyuwomen_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="版本更新"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+                    <TextView
+                        android:id="@+id/update"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:textColor="#ff878787"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="#ffdcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/set_autoupdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/user_layout_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_banbengengxin_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1"
+                        android:text="WIFI下自动更新"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+                    <ToggleButton
+                        android:id="@+id/set_auto_toggle"
+                        android:layout_width="55.0dip"
+                        android:layout_height="35.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="true"
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="#ffdcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/set_opinion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/user_layout_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_banbengengxin_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1"
+                        android:text="意见反馈"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="#ffdcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/set_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/user_layout_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="22.0dip"
+                        android:src="@drawable/setting_guanyuwomen_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="关于我们"
+                        android:textColor="#ff3d4245"
+                        android:textSize="@dimen/second_view_dimen" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

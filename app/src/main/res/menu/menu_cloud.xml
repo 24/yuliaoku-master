@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+
+    <!--<item-->
+    <!--android:id="@+id/action_update"-->
+    <!--android:title="@string/action_update"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:icon="@drawable/ic_arrow_back_white_24dp"-->
+    <!--app:showAsAction="always" />-->
+</menu>
